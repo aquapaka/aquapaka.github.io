@@ -1,0 +1,61 @@
+@font-face {
+    font-family: unifont;
+    src: url(../font/GnuUnifontFull-Pm9P.ttf);
+}
+
+:root {
+    --pixel-black: #23313f;
+    font-size: 200%;
+}
+
+body {
+    font-family: unifont;
+    background-color: #03A9F4;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul.info {
+    padding: 20px 0px 0px;
+}
+
+hr {
+    border: 0 none;
+    height: 10px;
+    background-color: var(--pixel-black);
+}
+
+#avatar {
+    width: 200px;
+    height: 200px;
+}
+
+.icon {
+    width: 68px;
+    height: auto;
+}
+
+.pixel-button {
+    border: none;
+    filter: drop-shadow(4px 4px var(--pixel-black));
+}
+
+.pixel-button:hover {
+    filter: none;
+    filter: drop-shadow(8px 8px var(--pixel-black));
+    transform: translate(-2px, -2px);   
+}
+
+.pixel-button:active {
+    filter: none;
+    filter: drop-shadow(0px 0px var(--pixel-black));
+    transform: translate(2px, 2px);
+}
+
+.pixel-border {
+    margin: 10px;
+    padding: 5px 10px;
+    box-shadow: 0px 4px var(--pixel-black), 0px -4px var(--pixel-black), 4px 0px var(--pixel-black), -4px 0px var(--pixel-black);
+}
