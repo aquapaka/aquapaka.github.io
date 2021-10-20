@@ -30,7 +30,7 @@ button {
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 #avatar, #avatar1 {
@@ -41,7 +41,6 @@ li {
 .icon {
     width: 51px;
     height: auto;
-    margin-top: 10px;
 }
 
 .pixel-button {
