@@ -5,7 +5,7 @@
 
 :root {
     --pixel-black: #23313f;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 body {
@@ -28,12 +28,12 @@ hr {
 }
 
 #avatar {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .icon {
-    width: 68px;
+    width: 51px;
     height: auto;
 }
 
