@@ -5,6 +5,7 @@
 
 :root {
     --pixel-black: #23313f;
+    --lighter-pixel-black: #2d3e50;
     font-size: 150%;
 }
 
@@ -65,7 +66,8 @@ li {
 }
 
 .pixel-border {
+    background-color: #60c4f3;
     margin: 10px;
     padding: 5px 10px;
-    box-shadow: 0px 4px var(--pixel-black), 0px -4px var(--pixel-black), 4px 0px var(--pixel-black), -4px 0px var(--pixel-black);
+    box-shadow: 0px 4px var(--pixel-black), 0px -4px var(--lighter-pixel-black), 4px 0px var(--pixel-black), -4px 0px var(--lighter-pixel-black);
 }
