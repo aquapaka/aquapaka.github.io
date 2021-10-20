@@ -22,9 +22,11 @@ ul.info {
 }
 
 hr {
-    border: 0 none;
-    height: 10px;
-    background-color: var(--pixel-black);
+    height: 2px !important;
+}
+
+button {
+    background-color: white;
 }
 
 #avatar {
