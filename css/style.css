@@ -57,7 +57,7 @@ li {
 
 .pixel-button:active {
     filter: none;
-    transform: translate(4px, 4px);
+    transform: translate(2px, 2px);
 }
 
 .pixel-border {
