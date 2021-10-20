@@ -29,7 +29,11 @@ button {
     background-color: white;
 }
 
-#avatar {
+li {
+    margin-bottom: 10px;
+}
+
+#avatar, #avatar1 {
     width: 150px;
     height: 150px;
 }
@@ -37,6 +41,7 @@ button {
 .icon {
     width: 51px;
     height: auto;
+    margin-top: 10px;
 }
 
 .pixel-button {
