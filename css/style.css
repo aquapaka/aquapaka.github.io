@@ -39,6 +39,10 @@ li {
     height: 150px;
 }
 
+#main {
+    margin-top: 15vh;
+}
+
 .icon {
     width: 51px;
     height: auto;
