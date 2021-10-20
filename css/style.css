@@ -27,10 +27,11 @@ hr {
 
 button {
     background-color: white;
+    margin-bottom: 8px;
 }
 
 li {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 #avatar, #avatar1 {
