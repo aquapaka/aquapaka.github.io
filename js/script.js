@@ -5,10 +5,8 @@ $(document).ready(function () {
     $("#avatar, #avatar1").click(function (e) {
         e.preventDefault();
         clickCount++;
-        console.log(clickCount);
         if (clickCount == 5) {
             changeAvatar();
-            console.log("changed");
             clickCount = 0;
         }
     });
