@@ -9,6 +9,10 @@
     font-size: 150%;
 }
 
+h1, h2 {
+    color: var(--lighter-pixel-black);
+}
+
 body {
     font-family: unifont;
     background-color: #03A9F4;
@@ -46,6 +50,11 @@ li {
 
 .icon {
     width: 51px;
+    height: auto;
+}
+
+.resume-icon {
+    width: 90px;
     height: auto;
 }
 

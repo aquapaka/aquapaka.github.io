@@ -15,7 +15,7 @@ $(document).ready(function () {
         if(!changed) {
             $("#avatar").hide();
             $("#avatar1").show();
-            $("#welcome").text("Hi, I'm Meimei");
+            $("#welcome").text("I'm in love with Meimei");
             $("body").css("background-color", "#FFBF00");
             $(".pixel-border").css("background-color", "#f7d264");
             changed = true;
