@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5aa522c-ec8c-4807-9957-186fd60c0881" name="Changes" comment="">
+    <list default="true" id="e5aa522c-ec8c-4807-9957-186fd60c0881" name="Changes" comment="Add InformationBox component">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -34,9 +35,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aquapaka/Development Projects/aquapaka.github.io/src/images",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
@@ -44,10 +47,18 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.general",
     "ts.external.directory.path": "C:\\Users\\aquapaka\\Development Projects\\aquapaka.github.io\\node_modules\\typescript\\lib"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aquapaka\Development Projects\aquapaka.github.io\src\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aquapaka\Development Projects\aquapaka.github.io\src\components" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -71,8 +82,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667751400463</updated>
-      <workItem from="1667751401610" duration="1024000" />
+      <workItem from="1667751401610" duration="1862000" />
+      <workItem from="1667824542507" duration="3268000" />
+      <workItem from="1667998878362" duration="2787000" />
+      <workItem from="1668002342375" duration="1642000" />
     </task>
+    <task id="LOCAL-00001" summary="Cleanup project">
+      <created>1667752464770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667752464770</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add avatar component">
+      <created>1667829865873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667829865873</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add social media icon">
+      <created>1668003867644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668003867644</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add SocialMediaLinks component">
+      <created>1668003886099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668003886099</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add InformationBox component">
+      <created>1668003922896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668003922896</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +150,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleanup project" />
+    <MESSAGE value="Add avatar component" />
+    <MESSAGE value="Add social media icon" />
+    <MESSAGE value="Add SocialMediaLinks component" />
+    <MESSAGE value="Add InformationBox component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add InformationBox component" />
   </component>
 </project>
