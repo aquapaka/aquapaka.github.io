@@ -15,30 +15,37 @@ import InformationBox from "./components/InformationBox";
 
 // Types
 import {Link} from "./components/SocialMediaLinks";
+import ProjectBox, {Project} from "./components/ProjectBox";
 
+// Const
 const links: Link[] = [
-    {"image": emailIcon, "url": "mailto:aqua.tamlong@gmail.com", "text": "aqua.tamlong@gmail.com"},
-    {"image": linkedinIcon, "url": "https://www.linkedin.com/in/aquapaka/", "text": "linkedin.com/in/aquapaka/"},
-    {"image": githubIcon, "url": "https://github.com/aquapaka", "text": "github.com/aquapaka"},
-    {"image": youtubeIcon, "url": "https://www.youtube.com/aquapaka", "text": "youtube.com/aquapaka"}
+    {image: emailIcon, url: "mailto:aqua.tamlong@gmail.com", text: "aqua.tamlong@gmail.com"},
+    {image: linkedinIcon, url: "https://www.linkedin.com/in/aquapaka/", text: "linkedin.com/in/aquapaka/"},
+    {image: githubIcon, url: "https://github.com/aquapaka", text: "github.com/aquapaka"},
+    {image: youtubeIcon, url: "https://www.youtube.com/aquapaka", text: "youtube.com/aquapaka"}
 ];
 
 const skills: string[] = [
     "Frontend: HTML5/CSS3, Bootstrap 4/5, Javascript ES6, JQuery, React, Typescript",
     "Backend: Java, MVC JSP/Servlet, Spring framework, RestAPI",
     "Database: MySql, Sql Server, Postgresql"
+];
+
+const projects: Project[] = [
+    {name: "Quiz app", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
+    {name: "Quiz app", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
 ]
 
 const App = () => {
     const [loading, setLoading] = useState(true);
 
     return (
-    <div className="App">
-        <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
-        <SocialMediaLinks links={links}/>
-        <InformationBox header="My Skills" texts={skills}/>
-        {/*<Projects/>*/}
-    </div>
+        <div className="App">
+            <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
+            <SocialMediaLinks links={links}/>
+            <InformationBox header="My Skills" texts={skills}/>
+            <ProjectBox projects={projects}/>
+        </div>
     );
 }
 
