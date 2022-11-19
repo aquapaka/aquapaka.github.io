@@ -13,6 +13,9 @@ import Avatar from "./components/Avatar";
 import SocialMediaLinks from "./components/SocialMediaLinks";
 import InformationBox from "./components/InformationBox";
 
+// Styles
+import {GlobalStyle} from './styles/App.styles'
+
 // Types
 import {Link} from "./components/SocialMediaLinks";
 import ProjectBox, {Project} from "./components/ProjectBox";
@@ -32,20 +35,24 @@ const skills: string[] = [
 ];
 
 const projects: Project[] = [
-    {name: "Quiz app", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
-    {name: "Quiz app", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
+    {name: "Simple Quiz", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
+    {name: "Donation Web Application", websiteUrl: "", repositoryUrl: "https://github.com/aquapaka/donation-webapp"},
+    {name: "Flappy Boat Game", websiteUrl: "", repositoryUrl: "https://github.com/aquapaka/FlappyBoat"}
 ]
 
 const App = () => {
     const [loading, setLoading] = useState(true);
 
     return (
-        <div className="App">
-            <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
-            <SocialMediaLinks links={links}/>
-            <InformationBox header="My Skills" texts={skills}/>
-            <ProjectBox projects={projects}/>
-        </div>
+        <>
+            <GlobalStyle/>
+            <div className="App">
+                <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
+                <SocialMediaLinks links={links}/>
+                <InformationBox header="My Skills" texts={skills}/>
+                <ProjectBox projects={projects}/>
+            </div>
+        </>
     );
 }
 

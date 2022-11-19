@@ -1,5 +1,9 @@
 import React from 'react';
 
+// Styles
+import {Wrapper} from "../styles/SocialMediaLinks.styles";
+import {DropShadowImageButton} from "../styles/Utils.styles";
+
 export type Link = {
     image: string,
     url: string,
@@ -11,16 +15,16 @@ type Props = {
 }
 
 const SocialMediaLinks: React.FC<Props> = ({links}) => (
-    <div>
+    <Wrapper>
         {links.map(link => (
-            <div>
-                <a href={link.url}>
-                    <img src={link.image} alt={link.text}/>
-                    <span>{link.text}</span>
+            <>
+                <a href={link.url} target="_blank" rel="noreferrer">
+                    <DropShadowImageButton src={link.image} alt={link.text}/>
                 </a>
-            </div>
+                <span>{link.text}</span>
+            </>
         ))}
-    </div>
+    </Wrapper>
 );
 
 export default SocialMediaLinks;

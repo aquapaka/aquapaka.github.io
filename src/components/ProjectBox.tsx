@@ -1,5 +1,9 @@
 import React from 'react';
 
+import {Wrapper} from "../styles/InformationBox.styles";
+import {DropShadowNormalButton} from "../styles/Utils.styles";
+import {ProjectItem} from "../styles/ProjectBox.styles";
+
 export type Project = {
     name: string,
     websiteUrl: string,
@@ -11,18 +15,22 @@ type Props = {
 }
 
 const ProjectBox: React.FC<Props> = ({projects}) => (
-    <div>
+    <Wrapper>
         <h2>My Projects</h2>
         <ul>
             {projects.map(project => (
                 <li>
-                    {project.name}
-                    <a href={project.websiteUrl}>View</a>
-                    <a href={project.repositoryUrl}>Repository</a>
+                    <ProjectItem>
+                        {project.name}
+                        <span>
+                            <DropShadowNormalButton href={project.websiteUrl} target="_blank">View</DropShadowNormalButton>
+                            <DropShadowNormalButton href={project.repositoryUrl} target="_blank">Repository</DropShadowNormalButton>
+                        </span>
+                    </ProjectItem>
                 </li>
             ))}
         </ul>
-    </div>
+    </Wrapper>
 )
 
 export default ProjectBox;
