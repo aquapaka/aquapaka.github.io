@@ -2,6 +2,7 @@ import styled, {keyframes} from "styled-components";
 
 type Props = {
     isLoading: boolean,
+    animationDelay: number
 }
 
 const fadeOutAnimation = keyframes`
@@ -23,7 +24,7 @@ export const Wrapper = styled.div<Props>`
   bottom: 0;
   z-index: 10;
   background: #08a8f3;
-  animation: ${fadeOutAnimation} 0.3s ease-in 1s forwards ${props => props.isLoading ? "pause" : "running"};
+  animation: ${fadeOutAnimation} 0.3s ease-in ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
 `;
 
 export const LoadingIcon = styled.div`

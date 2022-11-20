@@ -11,11 +11,12 @@ export type Project = {
 }
 
 type Props = {
+    isLoading: boolean,
     projects: Project[]
 }
 
-const ProjectBox: React.FC<Props> = ({projects}) => (
-    <Wrapper>
+const ProjectBox: React.FC<Props> = ({projects, isLoading}) => (
+    <Wrapper isLoading={isLoading} animationDelay={0.5}>
         <h2>My Projects</h2>
         <ul>
             {projects.map(project => (

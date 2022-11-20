@@ -7,7 +7,7 @@ type Props = {
 }
 
 const LoadingScreen: React.FC<Props> = ({isLoading}) => (
-    <Wrapper isLoading={isLoading}>
+    <Wrapper isLoading={isLoading} animationDelay={0.3}>
             <LoadingIcon>
                     <div></div>
                     <div></div>

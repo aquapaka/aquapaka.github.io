@@ -66,8 +66,8 @@ const App = () => {
             <Wrapper className="App">
                 <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
                 <SocialMediaLinks links={links}/>
-                <InformationBox header="My Skills" texts={skills}/>
-                <ProjectBox projects={projects}/>
+                <InformationBox header="My Skills" texts={skills} isLoading={loading}/>
+                <ProjectBox projects={projects} isLoading={loading}/>
             </Wrapper>
         </>
     );

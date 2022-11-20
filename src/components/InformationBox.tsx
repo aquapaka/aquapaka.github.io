@@ -3,12 +3,13 @@ import React from 'react';
 import {Wrapper} from "../styles/InformationBox.styles";
 
 type Props = {
+    isLoading: boolean,
     header: string,
     texts: string[]
 }
 
-const InformationBox: React.FC<Props> = ({header, texts}) => (
-    <Wrapper>
+const InformationBox: React.FC<Props> = ({header, texts, isLoading}) => (
+    <Wrapper isLoading={isLoading} animationDelay={0.4}>
         <h2>{header}</h2>
         <ul>
             {texts.map(text => (
