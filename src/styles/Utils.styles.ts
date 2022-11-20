@@ -18,7 +18,7 @@ export const DropShadowImageButton = styled.img`
 
 export const DropShadowNormalButton = styled.a`
   & {
-    display: inline-block;
+    display: ${props => props.href ? "inline-block" : "none"};
     color: #000;
     text-decoration: none;
     background: #fff;
