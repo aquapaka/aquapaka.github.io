@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 
 // @ts-ignore
 import GnuUnifontFull from './fonts/GnuUnifontFull.woff2';
@@ -32,3 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 24px;
   }
 `
+
+export const Wrapper = styled.div`
+
+`;

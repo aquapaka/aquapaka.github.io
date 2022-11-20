@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 // Images
 import aquapakaAvatar from './images/Aquatixel Pixel Art 800x800.png';
@@ -9,12 +9,13 @@ import githubIcon from './images/Github.png';
 import youtubeIcon from './images/Youtube.png';
 
 // Components
+import LoadingScreen from "./components/LoadingScreen";
 import Avatar from "./components/Avatar";
 import SocialMediaLinks from "./components/SocialMediaLinks";
 import InformationBox from "./components/InformationBox";
 
 // Styles
-import {GlobalStyle} from './styles/App.styles'
+import {GlobalStyle, Wrapper} from './styles/App.styles'
 
 // Types
 import {Link} from "./components/SocialMediaLinks";
@@ -43,15 +44,31 @@ const projects: Project[] = [
 const App = () => {
     const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        const onLoaded = () => {
+            setLoading(false);
+        };
+
+        // Check if the page has already loaded
+        if (document.readyState === 'complete') {
+            onLoaded();
+        } else {
+            window.addEventListener('load', onLoaded);
+            // Remove the event listener when component unmounts
+            return () => window.removeEventListener('load', onLoaded);
+        }
+    }, []);
+
     return (
         <>
             <GlobalStyle/>
-            <div className="App">
+            <LoadingScreen isLoading={loading}/>
+            <Wrapper className="App">
                 <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
                 <SocialMediaLinks links={links}/>
                 <InformationBox header="My Skills" texts={skills}/>
                 <ProjectBox projects={projects}/>
-            </div>
+            </Wrapper>
         </>
     );
 }
