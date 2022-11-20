@@ -28,6 +28,7 @@ export const Wrapper = styled.div<Props>`
     -webkit-box-shadow: 0px 4px var(#23313f), 0px -4px var(#23313f), 4px 0px var(#23313f), -4px 0px var(#23313f);
     box-shadow: 0px 4px #23313f, 0px -4px #23313f, 4px 0px #23313f, -4px 0px #23313f;
     max-width: 800px;
+    -webkit-animation: ${slideIn} 0.5s ease-out ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
     animation: ${slideIn} 0.5s ease-out ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
   }
   

@@ -16,7 +16,7 @@ type Props = {
 }
 
 const ProjectBox: React.FC<Props> = ({projects, isLoading}) => (
-    <Wrapper isLoading={isLoading} animationDelay={0.5}>
+    <Wrapper isLoading={isLoading} animationDelay={1.2}>
         <h2>My Projects</h2>
         <ul>
             {projects.map(project => (

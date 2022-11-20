@@ -24,6 +24,7 @@ export const Wrapper = styled.div<Props>`
   bottom: 0;
   z-index: 10;
   background: #08a8f3;
+  -webkit-animation: ${fadeOutAnimation} 0.3s ease-in ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
   animation: ${fadeOutAnimation} 0.3s ease-in ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
 `;
 

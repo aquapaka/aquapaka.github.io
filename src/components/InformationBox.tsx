@@ -9,7 +9,7 @@ type Props = {
 }
 
 const InformationBox: React.FC<Props> = ({header, texts, isLoading}) => (
-    <Wrapper isLoading={isLoading} animationDelay={0.4}>
+    <Wrapper isLoading={isLoading} animationDelay={1.1}>
         <h2>{header}</h2>
         <ul>
             {texts.map(text => (
