@@ -36,6 +36,7 @@ const skills: string[] = [
 ];
 
 const projects: Project[] = [
+    {name: "Low Poly City", websiteUrl: "https://aquapaka.github.io/three-ts-city/", repositoryUrl: "https://github.com/aquapaka/three-ts-city"},
     {name: "Simple Quiz", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
     {name: "Donation Web Application", websiteUrl: "", repositoryUrl: "https://github.com/aquapaka/donation-webapp"},
     {name: "Flappy Boat Game", websiteUrl: "", repositoryUrl: "https://github.com/aquapaka/FlappyBoat"}
