@@ -44,6 +44,17 @@ const projects: Project[] = [
 
 const App = () => {
     const [loading, setLoading] = useState(true);
+    const [secretTheme, setSecretTheme] = useState(false);
+    let clickCount = 0;
+
+    const secretClick = () => {
+        clickCount++;
+
+        if(clickCount >= 5) {
+            setSecretTheme(!secretTheme);
+            clickCount = 0;
+        }
+    }
 
     useEffect(() => {
         const onLoaded = () => {
@@ -62,13 +73,13 @@ const App = () => {
 
     return (
         <>
-            <GlobalStyle/>
-            <LoadingScreen isLoading={loading}/>
+            <GlobalStyle secretTheme={secretTheme}/>
             <Wrapper className="App">
-                <Avatar text={"Hi, I'm Aqua"} imageUrl={aquapakaAvatar}/>
+                <LoadingScreen isLoading={loading}/>
+                <Avatar text={secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua"} imageUrl={secretTheme ? meimeiAvatar : aquapakaAvatar} imageOnClick={secretClick}/>
                 <SocialMediaLinks links={links}/>
-                <InformationBox header="My Skills" texts={skills} isLoading={loading}/>
-                <ProjectBox projects={projects} isLoading={loading}/>
+                <InformationBox header="My Skills" texts={skills} isLoading={loading} secretTheme={secretTheme}/>
+                <ProjectBox projects={projects} isLoading={loading} secretTheme={secretTheme}/>
             </Wrapper>
         </>
     );

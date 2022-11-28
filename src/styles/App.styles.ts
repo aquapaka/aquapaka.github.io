@@ -3,7 +3,11 @@ import styled, {createGlobalStyle} from 'styled-components';
 // @ts-ignore
 import GnuUnifontFull from './fonts/GnuUnifontFull.woff2';
 
-export const GlobalStyle = createGlobalStyle`
+type Props = {
+    secretTheme: boolean
+}
+
+export const GlobalStyle = createGlobalStyle<Props>`
   @font-face {
     font-family: 'GnuUnifontFull';
     src: local('GnuUnifontFull'), url(${GnuUnifontFull}) format('woff2');
@@ -16,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #08a8f3;
+    background: ${props => props.secretTheme ? "#ffc207" : "#08a8f3"};
   }
 
   * {
