@@ -25,7 +25,7 @@ const ProjectBox: React.FC<Props> = ({projects, isLoading}) => (
                         {project.name}
                         <span>
                             <DropShadowNormalButton href={project.websiteUrl} target="_blank">View</DropShadowNormalButton>
-                            <DropShadowNormalButton href={project.repositoryUrl} target="_blank">Repository</DropShadowNormalButton>
+                            <DropShadowNormalButton href={project.repositoryUrl} target="_blank">Repo</DropShadowNormalButton>
                         </span>
                     </ProjectItem>
                 </li>
