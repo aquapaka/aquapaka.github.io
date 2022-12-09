@@ -7,6 +7,7 @@ import emailIcon from './images/Email.png';
 import linkedinIcon from './images/Linkedin.png';
 import githubIcon from './images/Github.png';
 import youtubeIcon from './images/Youtube.png';
+import discordIcon from './images/Discord.png'
 
 // Components
 import LoadingScreen from "./components/LoadingScreen";
@@ -26,7 +27,8 @@ const links: Link[] = [
     {image: emailIcon, url: "mailto:aqua.tamlong@gmail.com", text: "aqua.tamlong@gmail.com"},
     {image: linkedinIcon, url: "https://www.linkedin.com/in/aquapaka/", text: "linkedin.com/in/aquapaka/"},
     {image: githubIcon, url: "https://github.com/aquapaka", text: "github.com/aquapaka"},
-    {image: youtubeIcon, url: "https://www.youtube.com/aquapaka", text: "youtube.com/aquapaka"}
+    {image: youtubeIcon, url: "https://www.youtube.com/aquapaka", text: "youtube.com/aquapaka"},
+    {image: discordIcon, url: "https://discord.gg/ybu9ssM2PX", text: "Tree house"}
 ];
 
 const skills: string[] = [
