@@ -28,7 +28,7 @@ const links: Link[] = [
     {image: linkedinIcon, url: "https://www.linkedin.com/in/aquapaka/", text: "linkedin.com/in/aquapaka/"},
     {image: githubIcon, url: "https://github.com/aquapaka", text: "github.com/aquapaka"},
     {image: youtubeIcon, url: "https://www.youtube.com/aquapaka", text: "youtube.com/aquapaka"},
-    {image: discordIcon, url: "https://discord.gg/ybu9ssM2PX", text: "Tree house"}
+    {image: discordIcon, url: "https://discord.gg/ybu9ssM2PX", text: "Tree housenpm"}
 ];
 
 const skills: string[] = [
