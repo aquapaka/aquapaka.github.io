@@ -38,11 +38,11 @@ const skills: string[] = [
 ];
 
 const projects: Project[] = [
-    {name: "SuGarden web", websiteUrl: "https://aquapaka.github.io/sugarden-webapp/", repositoryUrl: "https://github.com/aquapaka/sugarden-webapp"},
-    {name: "Low Poly City", websiteUrl: "https://aquapaka.github.io/three-ts-city/", repositoryUrl: "https://github.com/aquapaka/three-ts-city"},
-    {name: "Simple Quiz", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
-    {name: "Donation Web Application", websiteUrl: "", repositoryUrl: "https://github.com/aquapaka/donation-webapp"},
-    {name: "Flappy Boat Game", websiteUrl: "", repositoryUrl: "https://github.com/aquapaka/FlappyBoat"}
+    {name: "Flappy Boat Java Game", websiteUrl: "", downloadUrl: "https://github.com/aquapaka/flappy-boat-javafx/releases/download/release/flappy-boat-javafx-1.0.jar", repositoryUrl: "https://github.com/aquapaka/flappy-boat-javafx"},
+    {name: "SuGarden web", websiteUrl: "https://aquapaka.github.io/sugarden-webapp/", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/sugarden-webapp"},
+    {name: "Low Poly City", websiteUrl: "https://aquapaka.github.io/three-ts-city/", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/three-ts-city"},
+    // {name: "Simple Quiz", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},
+    {name: "Donation Web Application", websiteUrl: "", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/donation-webapp"},
 ]
 
 const App = () => {
