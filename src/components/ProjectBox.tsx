@@ -27,7 +27,7 @@ const ProjectBox: React.FC<Props> = ({projects, isLoading, secretTheme}) => (
                         {project.name}
                         <span>
                             <DropShadowNormalButton href={project.websiteUrl} target="_blank">View</DropShadowNormalButton>
-                            <DropShadowNormalButton href={project.downloadUrl} target="_blank">Download</DropShadowNormalButton>
+                            <DropShadowNormalButton href={project.downloadUrl}>Download</DropShadowNormalButton>
                             <DropShadowNormalButton href={project.repositoryUrl} target="_blank">Repo</DropShadowNormalButton>
                         </span>
                     </ProjectItem>
