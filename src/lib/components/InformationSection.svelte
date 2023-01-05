@@ -3,8 +3,8 @@
   import { sineOut } from "svelte/easing";
 
   const skills = [
-    "Frontend: React, Javascript, Typescript, HTML5/CSS3, Bootstrap 4/5",
-    "Backend: Java, Spring framework, MVC, JSP/Servlet, RestAPI",
+    "Frontend: React, Svelte, HTML5/CSS3, Javascript, Typescript",
+    "Backend: Java, Spring framework, JavaEE",
     "Desktop: JavaFX",
     "Database: MySql, Sql Server, Postgresql"
   ];
