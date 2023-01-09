@@ -19,22 +19,21 @@ type Props = {
 }
 
 export const Wrapper = styled.div<Props>`
-  & {
-    position: relative;
-    opacity: 0;
-    left: 400px;
-    background: ${props => props.secretTheme ? "#fcda96" : "#60c4f2"};
-    margin: 24px auto;
-    padding: 12px;
-    -webkit-box-shadow: 0 4px var(#23313f), 0px -4px var(#23313f), 4px 0px var(#23313f), -4px 0px var(#23313f);
-    box-shadow: 0 4px #23313f, 0px -4px #23313f, 4px 0px #23313f, -4px 0px #23313f;
-    max-width: 800px;
-    -webkit-animation: ${slideIn} 0.5s ease-out ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
-    animation: ${slideIn} 0.5s ease-out ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
-  }
+  position: relative;
+  opacity: 0;
+  left: 400px;
+  background: ${props => props.secretTheme ? "#fcda96" : "#60c4f2"};
+  margin: 24px auto;
+  padding: 12px;
+  -webkit-box-shadow: 0 3px var(#23313f), 0px -3px var(#23313f), 3px 0px var(#23313f), -3px 0px var(#23313f);
+  box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f, -3px 0px #23313f;
+  max-width: 800px;
+  -webkit-animation: ${slideIn} 0.5s ease-out ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
+  animation: ${slideIn} 0.5s ease-out ${props => props.animationDelay}s forwards ${props => props.isLoading ? "pause" : "running"};
   
   ul {
-    padding: 0 0 0 25px;
+    padding: 0 0 0 20px;
+    margin: 12px 0;
   }
   
   li {
@@ -43,5 +42,9 @@ export const Wrapper = styled.div<Props>`
   
   h2 {
     margin: 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 6px;
   }
 `;

@@ -36,5 +36,9 @@ export const DropShadowNormalButton = styled.a`
     filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.7));
     transform: translate(2px, 2px);
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 4px 8px;
+  }
 `;
 

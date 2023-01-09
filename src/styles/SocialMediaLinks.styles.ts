@@ -13,6 +13,12 @@ export const Wrapper = styled.div`
   }
   
   img {
-    width: 68px;
+    width: 55px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    img {
+      width: 40px;
+    }
   }
 `;

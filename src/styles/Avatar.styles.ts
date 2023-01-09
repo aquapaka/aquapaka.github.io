@@ -8,4 +8,10 @@ export const Wrapper = styled.div`
   img {
     width: 120px;
   }
+
+  @media screen and (max-width: 500px) {
+    img {
+      width: 100px;
+    }
+  }
 `;

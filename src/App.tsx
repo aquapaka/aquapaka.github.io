@@ -28,17 +28,18 @@ const links: Link[] = [
     {image: linkedinIcon, url: "https://www.linkedin.com/in/aquapaka/", text: "linkedin.com/in/aquapaka/"},
     {image: githubIcon, url: "https://github.com/aquapaka", text: "github.com/aquapaka"},
     {image: youtubeIcon, url: "https://www.youtube.com/aquapaka", text: "youtube.com/aquapaka"},
-    {image: discordIcon, url: "https://discord.gg/ybu9ssM2PX", text: "Tree housenpm"}
+    {image: discordIcon, url: "https://discord.gg/ybu9ssM2PX", text: "My discord user"}
 ];
 
 const skills: string[] = [
-    "Frontend: HTML5/CSS3, Bootstrap 4/5, Javascript ES6, JQuery, React, Typescript",
-    "Backend: Java, MVC JSP/Servlet, Spring framework, RestAPI",
+    "Frontend: React, Javascript, Typescript, HTML5/CSS3, Bootstrap 4/5",
+    "Backend: Java, Spring framework, MVC, JSP/Servlet, RestAPI",
+    "Desktop: JavaFX",
     "Database: MySql, Sql Server, Postgresql"
 ];
 
 const projects: Project[] = [
-    {name: "Flappy Boat Java Game", websiteUrl: "", downloadUrl: "https://github.com/aquapaka/flappy-boat-javafx/releases/download/release/flappy-boat-javafx-1.0.jar", repositoryUrl: "https://github.com/aquapaka/flappy-boat-javafx"},
+    {name: "Flappy Boat Game", websiteUrl: "", downloadUrl: "https://github.com/aquapaka/flappy-boat-javafx/releases/download/release/flappy-boat-javafx-1.0.jar", repositoryUrl: "https://github.com/aquapaka/flappy-boat-javafx"},
     {name: "SuGarden web", websiteUrl: "https://aquapaka.github.io/sugarden-webapp/", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/sugarden-webapp"},
     {name: "Low Poly City", websiteUrl: "https://aquapaka.github.io/three-ts-city/", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/three-ts-city"},
     // {name: "Simple Quiz", websiteUrl: "https://aquapaka.github.io/quiz-react-ts/", downloadUrl: "", repositoryUrl: "https://github.com/aquapaka/quiz-react-ts"},

@@ -4,7 +4,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 import GnuUnifontFull from './fonts/GnuUnifontFull.woff2';
 
 type Props = {
-    secretTheme: boolean
+  secretTheme: boolean
 }
 
 export const GlobalStyle = createGlobalStyle<Props>`
@@ -25,15 +25,25 @@ export const GlobalStyle = createGlobalStyle<Props>`
 
   * {
     font-family: 'GnuUnifontFull', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
-  
+
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
-  
+
   h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
   }
 `
 
