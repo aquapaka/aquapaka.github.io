@@ -15,10 +15,6 @@ export const GlobalStyle = createGlobalStyle<Props>`
                               'embedded-opentype', and 'svg' */
   }
 
-  html {
-    height: 100%;
-  }
-
   body {
     background: ${props => props.secretTheme ? "#ffc207" : "#08a8f3"};
   }
