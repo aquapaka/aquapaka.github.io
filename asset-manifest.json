@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.d0a1987b.js",
+    "main.js": "/static/js/main.cbeffafa.js",
     "static/js/787.183f42c0.chunk.js": "/static/js/787.183f42c0.chunk.js",
     "static/media/GnuUnifontFull.woff2": "/static/media/GnuUnifontFull.70eb86a9ab6a237f3c93.woff2",
     "index.html": "/index.html",
-    "main.d0a1987b.js.map": "/static/js/main.d0a1987b.js.map",
+    "main.cbeffafa.js.map": "/static/js/main.cbeffafa.js.map",
     "787.183f42c0.chunk.js.map": "/static/js/787.183f42c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d0a1987b.js"
+    "static/js/main.cbeffafa.js"
   ]
 }
