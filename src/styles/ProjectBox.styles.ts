@@ -6,4 +6,9 @@ export const ProjectItem = styled.li`
     justify-content: space-between;
     align-items: center;
   }
+  
+  span {
+    display: flex;
+  }
 `;
+
