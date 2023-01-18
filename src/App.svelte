@@ -1,16 +1,18 @@
 <script lang="ts">
   import Avatar from "./lib/components/Avatar.svelte";
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
+  import InformationSection from "./lib/components/InformationSection.svelte";
 
   let secretTheme = false;
-  $: background = secretTheme ? "#ffc207" : "#08a8f3";
+  let isLoading = false;
+  $: backgroundColor = secretTheme ? "#ffc207" : "#08a8f3";
 </script>
 
-<main style:background>
+<main style:background={backgroundColor}>
   <!--  <LoadingScreen isLoading={loading}/>-->
   <Avatar bind:secretTheme={secretTheme}/>
   <SocialMediaLinks/>
-  <!--  <InformationBox header="My Skills" texts={skills} isLoading={loading} secretTheme={secretTheme}/>-->
+  <InformationSection {isLoading} {secretTheme}/>
   <!--  <ProjectBox projects={projects} isLoading={loading} secretTheme={secretTheme}/>-->
 </main>
 
