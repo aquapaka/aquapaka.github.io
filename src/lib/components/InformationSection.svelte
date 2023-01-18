@@ -1,5 +1,6 @@
 <script lang="ts">
   import { slide } from "svelte/transition";
+  import { sineOut } from "svelte/easing";
 
   const skills = [
     "Frontend: React, Javascript, Typescript, HTML5/CSS3, Bootstrap 4/5",
@@ -14,7 +15,7 @@
 </script>
 
 {#if !isLoading}
-  <div style:background={backgroundColor} transition:slide="{{delay: 250, duration: 500}}">
+  <div style:background={backgroundColor} transition:slide="{{delay: 1500, duration: 800, easing: sineOut}}">
     <h2>My Skills</h2>
     <ul>
       {#each skills as skill}

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { slide } from "svelte/transition";
+  import { bounceOut } from "svelte/easing";
 
   import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
 
@@ -15,7 +16,7 @@
 </script>
 
 {#if !isLoading}
-  <div style:background={backgroundColor} transition:slide="{{delay: 250, duration: 500}}">
+  <div style:background={backgroundColor} transition:slide="{{delay: 2000, duration: 1000, easing: bounceOut}}">
     <h2>My Projects</h2>
     <ul>
       {#each projects as project}
