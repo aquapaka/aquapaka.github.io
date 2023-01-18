@@ -1,16 +1,31 @@
 <script lang="ts">
+  import LoadingScreen from "./lib/components/LoadingScreen.svelte";
   import Avatar from "./lib/components/Avatar.svelte";
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
   import InformationSection from "./lib/components/InformationSection.svelte";
   import ProjectSection from "./lib/components/ProjectSection.svelte";
 
   let secretTheme = false;
-  let isLoading = false;
+  let isLoading = true;
   $: backgroundColor = secretTheme ? "#ffc207" : "#08a8f3";
+
+  const onLoaded = () => {
+    isLoading = false;
+  };
+
+  // Check if the page has already loaded
+  if (document.readyState === 'complete') {
+    onLoaded();
+    window.removeEventListener('load', onLoaded);
+  } else {
+    window.addEventListener('load', onLoaded);
+  }
 </script>
 
 <main style:background={backgroundColor}>
-  <!--  <LoadingScreen isLoading={loading}/>-->
+  {#if isLoading}
+    <LoadingScreen />
+  {/if}
   <Avatar bind:secretTheme={secretTheme}/>
   <SocialMediaLinks/>
   <InformationSection {isLoading} {secretTheme}/>
