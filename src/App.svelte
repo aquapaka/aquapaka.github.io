@@ -40,7 +40,9 @@
 
     main {
         position: absolute;
+        padding: 6px;
         width: 100%;
+        box-sizing: border-box;
         max-width: 100%;
         min-height: 100%;
         overflow: hidden;
