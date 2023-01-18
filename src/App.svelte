@@ -2,6 +2,7 @@
   import Avatar from "./lib/components/Avatar.svelte";
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
   import InformationSection from "./lib/components/InformationSection.svelte";
+  import ProjectSection from "./lib/components/ProjectSection.svelte";
 
   let secretTheme = false;
   let isLoading = false;
@@ -13,7 +14,7 @@
   <Avatar bind:secretTheme={secretTheme}/>
   <SocialMediaLinks/>
   <InformationSection {isLoading} {secretTheme}/>
-  <!--  <ProjectBox projects={projects} isLoading={loading} secretTheme={secretTheme}/>-->
+  <ProjectSection {isLoading} {secretTheme}/>
 </main>
 
 <style>
