@@ -1,10 +1,9 @@
 <script>
   export let src;
   export let alt;
-
 </script>
 
-<img {src} {alt} on:click/>
+<img {src} {alt} on:click|preventDefault on:keypress/>
 
 <style>
     img {
@@ -19,14 +18,14 @@
         }
     }
 
-    img:active {
-        filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.7));
-        transform: translate(2px, 2px);
-    }
-
     @media screen and (max-width: 512px) {
         img {
             width: var(--mobile-width);
         }
+    }
+
+    img:active {
+        filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.7));
+        transform: translate(2px, 2px);
     }
 </style>

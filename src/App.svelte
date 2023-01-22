@@ -51,6 +51,7 @@
     * {
         font-family: GnuUnifontFull, sans-serif;
         font-size: 16px;
+        touch-action: manipulation;
     }
 
     :global(body) {
