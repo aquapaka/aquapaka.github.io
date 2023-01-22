@@ -35,7 +35,7 @@
 <style>
     @font-face {
         font-family: 'GnuUnifontFull';
-        src: local('GnuUnifontFull'), url('./assets/fonts/GnuUnifontFull.woff2') format('woff2');
+        src: local('GnuUnifontFull'), url('./assets/fonts/GNUUnifontFull-Minimal.woff2') format('woff2');
     }
 
     main {
