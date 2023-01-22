@@ -3,7 +3,7 @@
   export let alt;
 </script>
 
-<img {src} {alt} on:click|preventDefault on:keypress/>
+<img {src} {alt} on:click on:keypress/>
 
 <style>
     img {
