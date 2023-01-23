@@ -2,6 +2,8 @@
   import { slide } from "svelte/transition";
   import { sineOut } from "svelte/easing";
 
+  import coralImage from "../../assets/coral-1.png";
+
   const skills = [
     "Frontend: React, Svelte, HTML5/CSS3, Javascript, Typescript",
     "Backend: Java, Spring framework, JavaEE",
@@ -19,6 +21,7 @@
     style:background={backgroundColor}
     transition:slide={{ delay: 1500, duration: 800, easing: sineOut }}
   >
+    <img class="coral-image" src={coralImage} alt="coral" />
     <h2>My Skills</h2>
     <ul>
       {#each skills as skill}
@@ -30,6 +33,7 @@
 
 <style>
   div {
+    position: relative;
     background: var(--backgroundColor);
     max-width: 800px;
     margin: 24px auto;
@@ -57,5 +61,13 @@
     div {
       padding: 6px;
     }
+  }
+
+  .coral-image {
+    width: 100px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 </style>

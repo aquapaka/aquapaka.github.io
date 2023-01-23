@@ -4,6 +4,8 @@
 
   import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
 
+  import coralImage from "../../assets/coral-0.png";
+
   const projects = [
     {
       name: "Flappy Boat Game",
@@ -36,6 +38,7 @@
     style:background={backgroundColor}
     transition:slide={{ delay: 2000, duration: 1000, easing: bounceOut }}
   >
+    <img class="coral-image" src={coralImage} alt="coral" />
     <h2>My Projects</h2>
     <ul>
       {#each projects as project}
@@ -63,6 +66,7 @@
 
 <style>
   div {
+    position: relative;
     background: var(--backgroundColor);
     max-width: 800px;
     margin: 24px auto;
@@ -104,5 +108,13 @@
     div {
       padding: 6px;
     }
+  }
+
+  .coral-image {
+    width: 100px;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 </style>
