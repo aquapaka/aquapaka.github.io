@@ -7,13 +7,13 @@
 
 <style>
   img {
-    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(4px 4px rgba(0, 0, 0, 0.5));
     width: var(--desktop-width, 20px);
   }
 
   @media (hover: hover) {
     img:hover {
-      filter: drop-shadow(8px 8px rgba(0, 0, 0, 0.7));
+      filter: drop-shadow(8px 8px rgba(0, 0, 0, 0.5));
       transform: translate(-2px, -2px);
     }
   }
@@ -25,7 +25,7 @@
   }
 
   img:active {
-    filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
     transform: translate(2px, 2px);
   }
 </style>
