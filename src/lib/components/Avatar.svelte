@@ -19,7 +19,7 @@
 </script>
 
 <div>
-  <h1>{secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua V1.1"}</h1>
+  <h1>{secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua"}</h1>
   <DropShadowImageButton
     src={secretTheme ? meimeiAvatar : aquaAvatar}
     alt="Avatar"
