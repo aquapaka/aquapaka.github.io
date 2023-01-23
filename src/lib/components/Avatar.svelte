@@ -15,22 +15,22 @@
       secretTheme = !secretTheme;
       clickCount = 0;
     }
-  }
+  };
 </script>
 
 <div>
-  <h1>{secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua"}</h1>
+  <h1>{secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua V1.1"}</h1>
   <DropShadowImageButton
-      src={secretTheme ? meimeiAvatar : aquaAvatar}
-      alt="Avatar"
-      on:click={secretClick}
-      --desktop-width="120px"
-      --mobile-width="100px"
+    src={secretTheme ? meimeiAvatar : aquaAvatar}
+    alt="Avatar"
+    on:click={secretClick}
+    --desktop-width="120px"
+    --mobile-width="100px"
   />
 </div>
 
 <style>
-    div {
-        text-align: center;
-    }
+  div {
+    text-align: center;
+  }
 </style>

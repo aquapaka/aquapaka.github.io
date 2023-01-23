@@ -6,7 +6,7 @@
     "Frontend: React, Svelte, HTML5/CSS3, Javascript, Typescript",
     "Backend: Java, Spring framework, JavaEE",
     "Desktop: JavaFX",
-    "Database: MySql, Sql Server, Postgresql"
+    "Database: MySql, Sql Server, Postgresql",
   ];
 
   export let isLoading;
@@ -15,7 +15,10 @@
 </script>
 
 {#if !isLoading}
-  <div style:background={backgroundColor} transition:slide="{{delay: 1500, duration: 800, easing: sineOut}}">
+  <div
+    style:background={backgroundColor}
+    transition:slide={{ delay: 1500, duration: 800, easing: sineOut }}
+  >
     <h2>My Skills</h2>
     <ul>
       {#each skills as skill}
@@ -26,31 +29,33 @@
 {/if}
 
 <style>
+  div {
+    background: var(--backgroundColor);
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 12px;
+    -webkit-box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f,
+      -3px 0px #23313f;
+    box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f,
+      -3px 0px #23313f;
+  }
+
+  ul {
+    padding: 0 0 0 20px;
+    margin: 12px 0;
+  }
+
+  li {
+    list-style: square;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 512px) {
     div {
-        background: var(--backgroundColor);
-        max-width: 800px;
-        margin: 24px auto;
-        padding: 12px;
-        -webkit-box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f, -3px 0px #23313f;
-        box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f, -3px 0px #23313f;
+      padding: 6px;
     }
-
-    ul {
-        padding: 0 0 0 20px;
-        margin: 12px 0;
-    }
-
-    li {
-        list-style: square;
-    }
-
-    h2 {
-        margin: 0;
-    }
-
-    @media screen and (max-width: 512px) {
-        div {
-            padding: 6px;
-        }
-    }
+  }
 </style>

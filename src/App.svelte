@@ -14,11 +14,11 @@
   };
 
   // Check if the page has already loaded
-  if (document.readyState === 'complete') {
+  if (document.readyState === "complete") {
     onLoaded();
-    window.removeEventListener('load', onLoaded);
+    window.removeEventListener("load", onLoaded);
   } else {
-    window.addEventListener('load', onLoaded);
+    window.addEventListener("load", onLoaded);
   }
 </script>
 
@@ -26,53 +26,54 @@
   {#if isLoading}
     <LoadingScreen />
   {/if}
-  <Avatar bind:secretTheme={secretTheme}/>
-  <SocialMediaLinks/>
-  <InformationSection {isLoading} {secretTheme}/>
-  <ProjectSection {isLoading} {secretTheme}/>
+  <Avatar bind:secretTheme />
+  <SocialMediaLinks />
+  <InformationSection {isLoading} {secretTheme} />
+  <ProjectSection {isLoading} {secretTheme} />
 </main>
 
 <style>
-    @font-face {
-        font-family: 'GnuUnifontFull';
-        src: local('GnuUnifontFull'), url('./assets/fonts/GNUUnifontFull-Minimal.woff2') format('woff2');
-    }
+  @font-face {
+    font-family: "GnuUnifontFull";
+    src: local("GnuUnifontFull"),
+      url("./assets/fonts/GNUUnifontFull-Minimal.woff2") format("woff2");
+  }
 
-    main {
-        position: absolute;
-        padding: 6px;
-        width: 100%;
-        box-sizing: border-box;
-        max-width: 100%;
-        min-height: 100%;
-        overflow: hidden;
-    }
+  main {
+    position: absolute;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+  }
 
-    * {
-        font-family: GnuUnifontFull, sans-serif;
-        font-size: 16px;
-        touch-action: manipulation;
-    }
+  * {
+    font-family: GnuUnifontFull, sans-serif;
+    font-size: 16px;
+    touch-action: manipulation;
+  }
 
-    :global(body) {
-        margin: 0;
-    }
+  :global(body) {
+    margin: 0;
+  }
 
+  :global(h1) {
+    font-size: 28px;
+  }
+
+  :global(h2) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 512px) {
     :global(h1) {
-        font-size: 28px;
+      font-size: 24px;
     }
 
     :global(h2) {
-        font-size: 22px;
+      font-size: 20px;
     }
-
-    @media screen and (max-width: 512px) {
-        :global(h1) {
-            font-size: 24px;
-        }
-
-        :global(h2) {
-            font-size: 20px;
-        }
-    }
+  }
 </style>
