@@ -11,7 +11,7 @@
   const secretClick = () => {
     clickCount++;
 
-    if (clickCount >= 5) {
+    if (clickCount >= 8) {
       secretTheme = !secretTheme;
       clickCount = 0;
     }
