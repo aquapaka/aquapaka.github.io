@@ -36,7 +36,7 @@
 {#if !isLoading}
   <div
     style:background={backgroundColor}
-    transition:slide={{ delay: 2000, duration: 1000, easing: bounceOut }}
+    transition:slide={{ delay: 2023, duration: 1000, easing: bounceOut }}
   >
     <img class="coral-image" src={coralImage} alt="coral" />
     <h2>My Projects</h2>
