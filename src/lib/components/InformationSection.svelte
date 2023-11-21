@@ -5,8 +5,8 @@
   import coralImage from "../../assets/coral-1.png";
   import skills from "../../datas/skills";
 
-  export let isLoading;
-  export let secretTheme;
+  export let isLoading: boolean;
+  export let secretTheme: string | boolean;
   $: backgroundColor = secretTheme ? "#fcda96" : "#60c4f2";
 </script>
 

@@ -1,6 +1,6 @@
-<script>
-  export let src;
-  export let alt;
+<script lang="ts">
+  export let src: string;
+  export let alt: string;
 </script>
 
 <img {src} {alt} on:click on:keypress />

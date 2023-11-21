@@ -5,8 +5,8 @@
   import InformationSection from "./lib/components/InformationSection.svelte";
   import ProjectSection from "./lib/components/ProjectSection.svelte";
 
-  let secretTheme = false;
-  let isLoading = true;
+  let secretTheme: string | boolean = false;
+  let isLoading: boolean = true;
   $: backgroundColor = secretTheme ? "#ffc207" : "#08a8f3";
 
   const onLoaded = () => {
@@ -86,5 +86,4 @@
       font-size: 20px;
     }
   }
-  
 </style>

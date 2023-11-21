@@ -1,6 +1,8 @@
 <script lang="ts">
-  export let href;
-  export let target;
+  import type { HTMLAttributeAnchorTarget } from "svelte/elements";
+
+  export let href: string;
+  export let target: HTMLAttributeAnchorTarget;
   $: displayType = href ? "inline-block" : "none";
 </script>
 
