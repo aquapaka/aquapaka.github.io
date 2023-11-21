@@ -1,12 +1,13 @@
 <script lang="ts">
   import type { HTMLAttributeAnchorTarget } from "svelte/elements";
+  import { click_sound } from "../sounds/svelte-sound";
 
   export let href: string;
   export let target: HTMLAttributeAnchorTarget;
   $: displayType = href ? "inline-block" : "none";
 </script>
 
-<a {href} {target} style:display={displayType}><slot /></a>
+<a {href} {target} style:display={displayType} use:click_sound><slot /></a>
 
 <style>
   a {

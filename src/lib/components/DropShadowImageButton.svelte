@@ -1,9 +1,11 @@
 <script lang="ts">
+  import { click_sound } from "../sounds/svelte-sound";
+
   export let src: string;
   export let alt: string;
 </script>
 
-<img {src} {alt} on:click on:keypress />
+<img {src} {alt} on:click on:keypress use:click_sound />
 
 <style>
   img {
