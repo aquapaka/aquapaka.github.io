@@ -3,13 +3,7 @@
   import { sineOut } from "svelte/easing";
 
   import coralImage from "../../assets/coral-1.png";
-
-  const skills = [
-    "Frontend: React, Svelte, HTML5/CSS3, Javascript, Typescript",
-    "Backend: Java, Spring framework, JavaEE",
-    "Desktop: JavaFX",
-    "Database: MySql, Sql Server, Postgresql",
-  ];
+  import skills from "../../datas/skills";
 
   export let isLoading;
   export let secretTheme;
