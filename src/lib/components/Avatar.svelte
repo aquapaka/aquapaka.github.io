@@ -4,7 +4,7 @@
 
   import DropShadowImageButton from "./DropShadowImageButton.svelte";
 
-  export let secretTheme: string | boolean;
+  export let secretTheme: boolean;
 
   let clickCount = 0;
 

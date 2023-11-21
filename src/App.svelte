@@ -5,7 +5,7 @@
   import InformationSection from "./lib/components/InformationSection.svelte";
   import ProjectSection from "./lib/components/ProjectSection.svelte";
 
-  let secretTheme: string | boolean = false;
+  let secretTheme: boolean = false;
   let isLoading: boolean = true;
   $: backgroundColor = secretTheme ? "#ffc207" : "#08a8f3";
 
