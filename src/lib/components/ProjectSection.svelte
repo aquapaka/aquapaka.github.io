@@ -9,7 +9,7 @@
   import projects from "../../datas/projects";
 
   export let isLoading: boolean;
-  export let secretTheme: string | boolean;
+  export let secretTheme: boolean;
   $: backgroundColor = secretTheme ? "#fcda96" : "#60c4f2";
 </script>
 

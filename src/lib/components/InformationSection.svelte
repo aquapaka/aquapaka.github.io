@@ -6,7 +6,7 @@
   import skills from "../../datas/skills";
 
   export let isLoading: boolean;
-  export let secretTheme: string | boolean;
+  export let secretTheme: boolean;
   $: backgroundColor = secretTheme ? "#fcda96" : "#60c4f2";
 </script>
 
