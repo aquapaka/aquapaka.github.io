@@ -34,7 +34,7 @@
               >
               <DropShadowNormalButton
                 href={project.repositoryUrl}
-                target="_blank">Repo</DropShadowNormalButton
+                target="_blank">Repository</DropShadowNormalButton
               >
             </span>
           </span>

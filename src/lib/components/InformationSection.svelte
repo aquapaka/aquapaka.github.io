@@ -19,7 +19,19 @@
     <h2>My Skills</h2>
     <ul>
       {#each skills as skill}
-        <li>{skill}</li>
+        <li>
+          {#if Array.isArray(skill)}
+            {skill[0]}
+            <ul>
+              {#each skill.slice(1) as ski}
+                <li>{ski}</li>
+              {/each}
+            </ul>
+          {:else}
+           {skill}
+          {/if}
+        </li>
+
       {/each}
     </ul>
   </div>
@@ -40,15 +52,17 @@
 
   ul {
     padding: 0 0 0 20px;
-    margin: 12px 0;
+    margin: 8px 0;
   }
 
   li {
     list-style: square;
+    padding-bottom: 4px;
   }
 
   h2 {
     margin: 0;
+    padding-bottom: 8px;
   }
 
   @media screen and (max-width: 512px) {

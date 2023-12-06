@@ -64,7 +64,7 @@
   }
 
   :global(h2) {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   :global(img) {
