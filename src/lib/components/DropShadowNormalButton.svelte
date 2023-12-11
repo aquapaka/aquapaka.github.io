@@ -11,6 +11,8 @@
 
 <style>
   a {
+    width: 80px;
+    text-align: center;
     color: #000;
     text-decoration: none;
     background: #fff;

@@ -27,7 +27,7 @@
             {project.name}
             <span>
               <DropShadowNormalButton href={project.websiteUrl} target="_blank"
-                >View</DropShadowNormalButton
+                >View Page</DropShadowNormalButton
               >
               <DropShadowNormalButton href={project.downloadUrl} target="_self"
                 >Download</DropShadowNormalButton
