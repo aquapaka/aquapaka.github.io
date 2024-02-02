@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pixel-box {
+    position: relative;
+    background: var(--backgroundColor);
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 12px;
+    -webkit-box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f,
+        -3px 0px #23313f;
+    box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f,
+        -3px 0px #23313f;
+}
