@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "./App.css"
   import LoadingScreen from "./lib/components/LoadingScreen.svelte";
   import Avatar from "./lib/components/Avatar.svelte";
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
@@ -39,6 +40,11 @@
       url("./assets/fonts/GNUUnifontFull-Minimal.woff2") format("woff2");
   }
 
+  * {
+    font-family: GnuUnifontFull, sans-serif;
+    touch-action: manipulation;
+  }
+
   main {
     position: absolute;
     padding: 6px;
@@ -49,24 +55,6 @@
     overflow: hidden;
   }
 
-  * {
-    font-family: GnuUnifontFull, sans-serif;
-    font-size: 16px;
-    touch-action: manipulation;
-  }
-
-  :global(body) {
-    margin: 0;
-  }
-
-  :global(h1) {
-    font-size: 28px;
-  }
-
-  :global(h2) {
-    font-size: 24px;
-  }
-
   :global(img) {
     image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges; /* Firefox                        */
@@ -75,15 +63,5 @@
     image-rendering: pixelated; /* Universal support since 2021   */
     image-rendering: optimize-contrast; /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;
-  }
-
-  @media screen and (max-width: 512px) {
-    :global(h1) {
-      font-size: 24px;
-    }
-
-    :global(h2) {
-      font-size: 20px;
-    }
   }
 </style>
