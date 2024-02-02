@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "./App.css"
+  import "./App.css";
   import LoadingScreen from "./lib/components/LoadingScreen.svelte";
   import Avatar from "./lib/components/Avatar.svelte";
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
@@ -36,7 +36,8 @@
 <style>
   @font-face {
     font-family: "GnuUnifontFull";
-    src: local("GnuUnifontFull"),
+    src:
+      local("GnuUnifontFull"),
       url("./assets/fonts/GNUUnifontFull-Minimal.woff2") format("woff2");
   }
 

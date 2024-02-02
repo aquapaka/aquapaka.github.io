@@ -24,9 +24,9 @@
         <li>
           <div class="flex justify-between align-middle">
             <span class="project-item">
-            {project.name}
-          </span>
-          <span class="pb-2">
+              {project.name}
+            </span>
+            <span class="pb-2">
               <DropShadowNormalButton href={project.websiteUrl} target="_blank"
                 >View Page</DropShadowNormalButton
               >

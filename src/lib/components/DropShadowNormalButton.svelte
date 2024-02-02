@@ -8,7 +8,8 @@
 </script>
 
 <div class="group">
-  <a class="
+  <a
+    class="
     text-nowrap
     px-2 md:px-4 py-1
     bg-white
@@ -19,7 +20,12 @@
     group-active:drop-shadow-[2px_2px_rgba(0,0,0,0.5)]
     group-active:translate-x-[2px]
     group-active:translate-y-[2px]
-    " {href} {target} style:display={displayType} use:click_sound>
-<slot />
-</a>
+    "
+    {href}
+    {target}
+    style:display={displayType}
+    use:click_sound
+  >
+    <slot />
+  </a>
 </div>
