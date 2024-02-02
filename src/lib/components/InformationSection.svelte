@@ -1,12 +1,12 @@
 <script lang="ts">
   import { slide } from "svelte/transition";
   import { sineOut } from "svelte/easing";
-
   import coralImage from "../../assets/coral-1.png";
   import skills from "../../datas/skills";
 
   export let isLoading: boolean;
   export let secretTheme: boolean;
+
   $: backgroundColor = secretTheme ? "#fcda96" : "#60c4f2";
 </script>
 
@@ -16,13 +16,13 @@
     transition:slide={{ delay: 1500, duration: 800, easing: sineOut }}
   >
     <img class="coral-image" src={coralImage} alt="coral" />
-    <h2>My Skills</h2>
-    <ul>
+    <h2 class="font-bold pb-2">My Skills</h2>
+    <ul class="list-[square] pl-4">
       {#each skills as skill}
         <li>
           {#if Array.isArray(skill)}
-            {skill[0]}
-            <ul>
+            <span class="underline">{skill[0]}</span>
+            <ul class="pl-3">
               {#each skill.slice(1) as ski}
                 <li>{ski}</li>
               {/each}
@@ -48,27 +48,6 @@
       -3px 0px #23313f;
     box-shadow: 0 3px #23313f, 0px -3px #23313f, 3px 0px #23313f,
       -3px 0px #23313f;
-  }
-
-  ul {
-    padding: 0 0 0 20px;
-    margin: 8px 0;
-  }
-
-  li {
-    list-style: square;
-    padding-bottom: 4px;
-  }
-
-  h2 {
-    margin: 0;
-    padding-bottom: 8px;
-  }
-
-  @media screen and (max-width: 512px) {
-    div {
-      padding: 6px;
-    }
   }
 
   .coral-image {

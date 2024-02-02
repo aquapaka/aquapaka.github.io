@@ -1,13 +1,14 @@
 export default [
   [
     "Svelte Web development:",
-    "Language: HTML5/CSS3, Javascript, Typescript",
-    "Techstack: Svelte, SvelteKit, TailwindCSS, SkeletonUI, Supabase, Firebase, NodeJS",
+    "Frameworks & Libraries: Svelte, SvelteKit, TailwindCSS, SkeletonUI.",
+    "Platforms: NodeJS, Supabase, Firebase, Vercel.",
+    "Language: Javascript, Typescript.",
   ],
   [
-    "Others:",
-    "ReactJS, NextJS",
-    "Java, JavaEE, JavaFX, Spring Boot",
-    "Database: MySql, Sql Server, Postgresql",
+    "Also Familiar with:",
+    "Other web frameworks: React, Next, Vue, Nuxt.",
+    "Java backend development with Spring Boot, JavaEE, JavaFX.",
+    "Databases: MySQL, SQL Server, Postgresql.",
   ],
 ];
