@@ -1,7 +1,6 @@
 <script lang="ts">
   import aquaAvatar from "../../assets/Aquatixel Pixel Art 800x800.png";
   import meimeiAvatar from "../../assets/My Love Pixel Art 800x800.png";
-
   import DropShadowImageButton from "./DropShadowImageButton.svelte";
 
   export let secretTheme: boolean;
@@ -28,9 +27,3 @@
     --mobile-width="100px"
   />
 </div>
-
-<style>
-  div {
-    text-align: center;
-  }
-</style>
