@@ -1,10 +1,9 @@
 <script lang="ts">
   import links from "../../datas/links";
-
   import DropShadowImageButton from "./DropShadowImageButton.svelte";
 </script>
 
-<div>
+<div class="flex justify-center m-2 gap-2">
   {#each links as link}
     <a href={link.url} target="_blank" rel="noreferrer">
       <DropShadowImageButton
@@ -14,19 +13,6 @@
         --mobile-width="40px"
       />
     </a>
-    <span>{link.text}</span>
+    <span class="hidden">{link.text}</span>
   {/each}
 </div>
-
-<style>
-  div {
-    display: flex;
-    justify-content: center;
-    margin: 16px;
-    gap: 8px;
-  }
-
-  span {
-    display: none;
-  }
-</style>
