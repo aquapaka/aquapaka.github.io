@@ -4,4 +4,5 @@ Created using Svelte.
 
 https://aquapaka.github.io/
 
-![image](https://user-images.githubusercontent.com/84399613/204163142-060db826-e66b-4b57-9b99-b1e9587ad921.png)
+![image](https://github.com/aquapaka/aquapaka.github.io/assets/84399613/c00a0b44-705e-425f-90a9-7ddeeef3c9c9)
+
