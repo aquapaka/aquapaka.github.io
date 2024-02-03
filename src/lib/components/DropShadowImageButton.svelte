@@ -3,9 +3,10 @@
 
   export let src: string;
   export let alt: string;
+  export let hidden: boolean;
 </script>
 
-<button class="group" on:click on:keypress use:click_sound>
+<button class="group" on:click on:keypress use:click_sound {hidden}>
   <img
     class="
     drop-shadow-[4px_4px_rgba(0,0,0,0.5)]

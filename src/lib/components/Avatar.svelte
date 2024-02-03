@@ -22,7 +22,16 @@
     {secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua"}
   </h1>
   <DropShadowImageButton
-    src={secretTheme ? meimeiAvatar : aquaAvatar}
+    hidden={secretTheme}
+    src={aquaAvatar}
+    alt="Avatar"
+    on:click={secretClick}
+    --desktop-width="120px"
+    --mobile-width="100px"
+  />
+  <DropShadowImageButton
+    hidden={!secretTheme}
+    src={meimeiAvatar}
     alt="Avatar"
     on:click={secretClick}
     --desktop-width="120px"
