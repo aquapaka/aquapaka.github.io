@@ -4,8 +4,8 @@
   import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
   import coralImage from "../../assets/coral-0.png";
   import projects from "../../datas/projects";
-  import OpenIcon from "./icons/OpenIcon.svelte"
-    import RepositoryIcon from "./icons/RepositoryIcon.svelte";
+  import OpenIcon from "./icons/OpenIcon.svelte";
+  import RepositoryIcon from "./icons/RepositoryIcon.svelte";
 
   export let isLoading: boolean;
   export let secretTheme: boolean;
@@ -28,17 +28,27 @@
             <span class="project-item">
               {project.name}
             </span>
-            <span class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end">
+            <span
+              class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end"
+            >
               <DropShadowNormalButton href={project.websiteUrl} target="_blank"
-                ><OpenIcon class="w-4 h-4 text-gray-700"/>View Page</DropShadowNormalButton
+                ><OpenIcon class="w-4 h-4 text-gray-700" />View Page</DropShadowNormalButton
               >
-              <DropShadowNormalButton href={project.downloadUrl} target="_self"
-                >Download</DropShadowNormalButton
-              >
-              <DropShadowNormalButton
-                href={project.repositoryUrl}
-                target="_blank"><RepositoryIcon class="w-4 h-4 text-gray-700"/>Repository</DropShadowNormalButton
-              >
+              {#if project.downloadUrl.length > 0}
+                <DropShadowNormalButton
+                  href={project.downloadUrl}
+                  target="_self">Download</DropShadowNormalButton
+                >
+              {/if}
+              {#if project.repositoryUrl.length > 0}
+                <DropShadowNormalButton
+                  href={project.repositoryUrl}
+                  target="_blank"
+                  ><RepositoryIcon
+                    class="w-4 h-4 text-gray-700"
+                  />Repository</DropShadowNormalButton
+                >
+              {/if}
             </span>
           </div>
         </li>

@@ -4,12 +4,12 @@
 
   export let href: string;
   export let target: HTMLAttributeAnchorTarget;
-  $: displayType = href ? "flex" : "none";
 </script>
 
 <div class="group">
   <a
     class="
+    flex
     w-[120px]
     text-nowrap
     px-2 py-1
@@ -27,7 +27,6 @@
     "
     {href}
     {target}
-    style:display={displayType}
     use:click_sound
   >
     <slot />
