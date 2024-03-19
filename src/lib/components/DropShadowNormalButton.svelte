@@ -4,14 +4,18 @@
 
   export let href: string;
   export let target: HTMLAttributeAnchorTarget;
-  $: displayType = href ? "inline-block" : "none";
+  $: displayType = href ? "flex" : "none";
 </script>
 
 <div class="group">
   <a
     class="
+    w-[120px]
     text-nowrap
-    px-2 md:px-4 py-1
+    px-2 py-1
+    justify-center
+    items-center
+    gap-1
     bg-white
     drop-shadow-[4px_4px_rgba(0,0,0,0.5)]
     group-hover:drop-shadow-[8px_8px_rgba(0,0,0,0.5)]

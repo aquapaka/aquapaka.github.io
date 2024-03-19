@@ -9,7 +9,7 @@ export default [
     name: "Svelte 5 Todos Demo",
     websiteUrl: "https://svelte-5-todo-app.vercel.app/",
     downloadUrl: "",
-    repositoryUrl: "",
+    repositoryUrl: "https://github.com/aquapaka/svelte-5-todo-app",
   },
   {
     name: "Low Poly City",

@@ -4,6 +4,8 @@
   import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
   import coralImage from "../../assets/coral-0.png";
   import projects from "../../datas/projects";
+  import OpenIcon from "./icons/OpenIcon.svelte"
+    import RepositoryIcon from "./icons/RepositoryIcon.svelte";
 
   export let isLoading: boolean;
   export let secretTheme: boolean;
@@ -22,20 +24,20 @@
     <ul class="list-[square] pl-4">
       {#each projects as project}
         <li>
-          <div class="flex justify-between align-middle">
+          <div class="flex justify-between">
             <span class="project-item">
               {project.name}
             </span>
-            <span class="pb-2">
+            <span class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end">
               <DropShadowNormalButton href={project.websiteUrl} target="_blank"
-                >View Page</DropShadowNormalButton
+                ><OpenIcon class="w-4 h-4 text-gray-700"/>View Page</DropShadowNormalButton
               >
               <DropShadowNormalButton href={project.downloadUrl} target="_self"
                 >Download</DropShadowNormalButton
               >
               <DropShadowNormalButton
                 href={project.repositoryUrl}
-                target="_blank">Repository</DropShadowNormalButton
+                target="_blank"><RepositoryIcon class="w-4 h-4 text-gray-700"/>Repository</DropShadowNormalButton
               >
             </span>
           </div>
