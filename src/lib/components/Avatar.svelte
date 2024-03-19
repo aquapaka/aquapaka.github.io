@@ -17,8 +17,8 @@
   };
 </script>
 
-<div class="text-center">
-  <h1 class="text-[1.15rem] md:text-[1.5rem] font-bold">
+<div class="text-center mb-2">
+  <h1 class="text-[1.5rem] md:text-[2rem] font-bold mb-2">
     {secretTheme ? "I'm in love with Meimei" : "Hi, I'm Aqua"}
   </h1>
   <DropShadowImageButton
