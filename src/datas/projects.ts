@@ -1,13 +1,13 @@
 export default [
   {
-    name: "Dotfiles",
-    websiteUrl: "",
-    downloadUrl: "",
-    repositoryUrl: "https://github.com/aquapaka/dotfiles",
-  },
-  {
     name: "Make Me Forget",
     websiteUrl: "https://makemeforget.vercel.app/",
+    downloadUrl: "",
+    repositoryUrl: "",
+  },
+  {
+    name: "Svelte 5 Todos Demo",
+    websiteUrl: "https://svelte-5-todo-app.vercel.app/",
     downloadUrl: "",
     repositoryUrl: "",
   },
@@ -19,12 +19,18 @@ export default [
     // repositoryUrl: "https://github.com/aquapaka/three-ts-city",
   },
   {
-    name: "SuGarden web",
-    websiteUrl: "https://aquapaka.github.io/sugarden-webapp/",
+    name: "Dotfiles",
+    websiteUrl: "",
     downloadUrl: "",
-    repositoryUrl: "",
-    // repositoryUrl: "https://github.com/aquapaka/sugarden-webapp",
+    repositoryUrl: "https://github.com/aquapaka/dotfiles",
   },
+  // {
+  //   name: "SuGarden web",
+  //   websiteUrl: "https://aquapaka.github.io/sugarden-webapp/",
+  //   downloadUrl: "",
+  //   repositoryUrl: "",
+  //   // repositoryUrl: "https://github.com/aquapaka/sugarden-webapp",
+  // },
   // {
   //     name: "Flappy Boat Game",
   //     websiteUrl: "",

@@ -27,7 +27,7 @@ export default [
     },
     {
         image: discordIcon,
-        url: "https://discord.gg/AqgyxkPtXf",
+        url: "https://discord.gg/mfMnv6ZFcF",
         text: "Contact me on discord",
     },
 ];
