@@ -31,16 +31,21 @@
             <span
               class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end"
             >
-              <DropShadowNormalButton href={project.websiteUrl} target="_blank"
-                ><OpenIcon class="w-4 h-4 text-gray-700" />View Page</DropShadowNormalButton
-              >
-              {#if project.downloadUrl.length > 0}
+              {#if project.websiteUrl.length}
+                <DropShadowNormalButton
+                  href={project.websiteUrl}
+                  target="_blank"
+                  ><OpenIcon class="w-4 h-4 text-gray-700" />View Page</DropShadowNormalButton
+                >
+              {/if}
+
+              {#if project.downloadUrl.length}
                 <DropShadowNormalButton
                   href={project.downloadUrl}
                   target="_self">Download</DropShadowNormalButton
                 >
               {/if}
-              {#if project.repositoryUrl.length > 0}
+              {#if project.repositoryUrl.length}
                 <DropShadowNormalButton
                   href={project.repositoryUrl}
                   target="_blank"
