@@ -16,7 +16,7 @@
     style:background={backgroundColor}
     transition:slide={{ delay: 1500, duration: 800, easing: sineOut }}
   >
-    <img class="coral-image" src={coralImage} alt="coral" />
+    <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
     <h2 class="font-bold pb-2">My Skills</h2>
     <ul class="list-[square] pl-4">
       {#each skills as skill}

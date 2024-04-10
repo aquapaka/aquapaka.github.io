@@ -5,6 +5,7 @@
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
   import InformationSection from "./lib/components/InformationSection.svelte";
   import ProjectSection from "./lib/components/ProjectSection.svelte";
+    import ClientSection from "./lib/components/ClientSection.svelte";
 
   let secretTheme: boolean = false;
   let isLoading: boolean = true;
@@ -30,6 +31,7 @@
   <Avatar bind:secretTheme />
   <SocialMediaLinks />
   <InformationSection {isLoading} {secretTheme} />
+  <ClientSection {isLoading} {secretTheme} />
   <ProjectSection {isLoading} {secretTheme} />
 </main>
 

@@ -19,7 +19,7 @@
     style:background={backgroundColor}
     transition:slide={{ delay: 2024, duration: 1000, easing: bounceOut }}
   >
-    <img class="coral-image" src={coralImage} alt="coral" />
+    <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
     <h2 class="font-bold pb-2">My Projects</h2>
     <ul class="list-[square] pl-4">
       {#each projects as project}
