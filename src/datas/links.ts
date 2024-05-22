@@ -4,7 +4,13 @@ import githubIcon from "../assets/Github.png";
 import youtubeIcon from "../assets/Youtube.png";
 import discordIcon from "../assets/Discord.png";
 
-export default [
+type SocialMedia = {
+  image: string;
+  url: string;
+  text: string;
+};
+
+const socialMedias: SocialMedia[] = [
   {
     image: emailIcon,
     url: "mailto:aqua.tamlong@gmail.com",
@@ -31,3 +37,5 @@ export default [
     text: "Contact me on discord",
   },
 ];
+
+export default socialMedias;

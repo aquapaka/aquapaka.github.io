@@ -1,16 +1,19 @@
-export default [
+type Project = {
+  name: string;
+  websiteUrl?: string;
+  downloadUrl?: string;
+  repositoryUrl?: string;
+};
+
+const projects: Project[] = [
   {
     name: "Make Me Forget",
     websiteUrl: "https://makemeforget.vercel.app/",
-    downloadUrl: "",
-    repositoryUrl: "",
   },
   {
     name: "Low Poly City",
     websiteUrl: "https://aquapaka.github.io/three-ts-city/",
-    downloadUrl: "",
-    repositoryUrl: "",
-    // repositoryUrl: "https://github.com/aquapaka/three-ts-city",
+    repositoryUrl: "https://github.com/aquapaka/three-ts-city",
   },
   // {
   //   name: "SuGarden web",
@@ -21,14 +24,10 @@ export default [
   // },
   {
     name: "Dotfiles",
-    websiteUrl: "",
-    downloadUrl: "",
     repositoryUrl: "https://github.com/aquapaka/dotfiles",
   },
   {
     name: "PixelCraft Font",
-    websiteUrl: "",
-    downloadUrl: "",
     repositoryUrl: "https://github.com/aquapaka/Pixelcraft",
   },
   // {
@@ -45,3 +44,5 @@ export default [
   //     repositoryUrl: "https://github.com/aquapaka/flappy-boat-javafx",
   // },
 ];
+
+export default projects;

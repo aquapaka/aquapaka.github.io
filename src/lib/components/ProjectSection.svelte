@@ -6,61 +6,54 @@
   import projects from "../../datas/projects";
   import OpenIcon from "./icons/OpenIcon.svelte";
   import RepositoryIcon from "./icons/RepositoryIcon.svelte";
+  import { secretTheme } from "../stores/mainstore";
 
-  export let isLoading: boolean;
-  export let secretTheme: boolean;
-
-  $: backgroundColor = secretTheme ? "#fcda96" : "#60c4f2";
+  $: backgroundColor = $secretTheme.isActive ? "#fcda96" : "#60c4f2";
 </script>
 
-{#if !isLoading}
-  <div
-    class="pixel-box"
-    style:background={backgroundColor}
-    transition:slide={{ delay: 2024, duration: 1000, easing: bounceOut }}
-  >
-    <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
-    <h2 class="font-bold pb-2">My Projects</h2>
-    <ul class="list-[square] pl-4">
-      {#each projects as project}
-        <li>
-          <div class="flex justify-between">
-            <span class="project-item">
-              {project.name}
-            </span>
-            <span
-              class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end"
-            >
-              {#if project.websiteUrl.length}
-                <DropShadowNormalButton
-                  href={project.websiteUrl}
-                  target="_blank"
-                  ><OpenIcon class="w-4 h-4 text-gray-700" />View Page</DropShadowNormalButton
-                >
-              {/if}
+<div
+  class="pixel-box"
+  style:background={backgroundColor}
+  transition:slide={{ delay: 2024, duration: 1000, easing: bounceOut }}
+>
+  <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
+  <h2 class="font-bold pb-2">My Projects</h2>
+  <ul class="list-[square] pl-4">
+    {#each projects as project}
+      <li>
+        <div class="flex justify-between">
+          <span class="project-item">
+            {project.name}
+          </span>
+          <span
+            class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end"
+          >
+            {#if project.websiteUrl}
+              <DropShadowNormalButton href={project.websiteUrl} target="_blank"
+                ><OpenIcon class="w-4 h-4 text-gray-700" />View Page</DropShadowNormalButton
+              >
+            {/if}
 
-              {#if project.downloadUrl.length}
-                <DropShadowNormalButton
-                  href={project.downloadUrl}
-                  target="_self">Download</DropShadowNormalButton
-                >
-              {/if}
-              {#if project.repositoryUrl.length}
-                <DropShadowNormalButton
-                  href={project.repositoryUrl}
-                  target="_blank"
-                  ><RepositoryIcon
-                    class="w-4 h-4 text-gray-700"
-                  />Repository</DropShadowNormalButton
-                >
-              {/if}
-            </span>
-          </div>
-        </li>
-      {/each}
-    </ul>
-  </div>
-{/if}
+            {#if project.downloadUrl}
+              <DropShadowNormalButton href={project.downloadUrl} target="_self"
+                >Download</DropShadowNormalButton
+              >
+            {/if}
+            {#if project.repositoryUrl}
+              <DropShadowNormalButton
+                href={project.repositoryUrl}
+                target="_blank"
+                ><RepositoryIcon
+                  class="w-4 h-4 text-gray-700"
+                />Repository</DropShadowNormalButton
+              >
+            {/if}
+          </span>
+        </div>
+      </li>
+    {/each}
+  </ul>
+</div>
 
 <style>
   .coral-image {

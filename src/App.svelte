@@ -5,11 +5,11 @@
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
   import InformationSection from "./lib/components/InformationSection.svelte";
   import ProjectSection from "./lib/components/ProjectSection.svelte";
-    import ClientSection from "./lib/components/ClientSection.svelte";
+  import ClientSection from "./lib/components/ClientSection.svelte";
+  import { secretTheme } from "./lib/stores/mainstore";
 
-  let secretTheme: boolean = false;
   let isLoading: boolean = true;
-  $: backgroundColor = secretTheme ? "#ffc207" : "#08a8f3";
+  $: backgroundColor = $secretTheme.isActive ? "#ffc207" : "#08a8f3";
 
   const onLoaded = () => {
     isLoading = false;
@@ -28,11 +28,13 @@
   {#if isLoading}
     <LoadingScreen />
   {/if}
-  <Avatar bind:secretTheme />
-  <SocialMediaLinks />
-  <InformationSection {isLoading} {secretTheme} />
-  <ClientSection {isLoading} {secretTheme} />
-  <ProjectSection {isLoading} {secretTheme} />
+  <Avatar />
+  {#if !isLoading}
+    <SocialMediaLinks />
+    <InformationSection />
+    <ClientSection />
+    <ProjectSection />
+  {/if}
 </main>
 
 <style>
