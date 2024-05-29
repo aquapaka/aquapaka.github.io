@@ -2,7 +2,7 @@
   import { fade } from "svelte/transition";
 </script>
 
-<div class="loading-screen" transition:fade={{ delay: 1200, duration: 300 }}>
+<div class="loading-screen bg-black" transition:fade={{ delay: 1200, duration: 300 }}>
   <div class="loading-icon">
     <div />
     <div />
@@ -58,7 +58,6 @@
     left: 0;
     bottom: 0;
     z-index: 10;
-    background: #08a8f3;
   }
 
   .loading-icon {
