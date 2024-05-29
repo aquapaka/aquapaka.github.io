@@ -7,12 +7,10 @@
   import OpenIcon from "./icons/OpenIcon.svelte";
   import { secretTheme } from "../stores/mainstore";
 
-  $: backgroundColor = $secretTheme.isActive ? "#fcda96" : "#60c4f2";
 </script>
 
 <div
   class="pixel-box"
-  style:background={backgroundColor}
   transition:slide={{ delay: 1800, duration: 800, easing: cubicOut }}
 >
   <img class="pufferfish" src={pufferFish} alt="pufferfish" draggable="false" />

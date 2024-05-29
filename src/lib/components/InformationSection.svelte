@@ -1,16 +1,13 @@
 <script lang="ts">
-  import { slide } from "svelte/transition";
   import { sineOut } from "svelte/easing";
+  import { slide } from "svelte/transition";
   import coralImage from "../../assets/coral-1.png";
   import skills from "../../datas/skills";
-  import { secretTheme } from "../stores/mainstore";
 
-  $: backgroundColor = $secretTheme.isActive ? "#fcda96" : "#60c4f2";
 </script>
 
 <div
   class="pixel-box"
-  style:background={backgroundColor}
   transition:slide={{ delay: 1500, duration: 800, easing: sineOut }}
 >
   <img class="coral-image" src={coralImage} alt="coral" draggable="false" />

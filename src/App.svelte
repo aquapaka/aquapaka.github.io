@@ -1,15 +1,14 @@
 <script lang="ts">
   import "./App.css";
-  import LoadingScreen from "./lib/components/LoadingScreen.svelte";
   import Avatar from "./lib/components/Avatar.svelte";
-  import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
-  import InformationSection from "./lib/components/InformationSection.svelte";
-  import ProjectSection from "./lib/components/ProjectSection.svelte";
   import ClientSection from "./lib/components/ClientSection.svelte";
+  import InformationSection from "./lib/components/InformationSection.svelte";
+  import LoadingScreen from "./lib/components/LoadingScreen.svelte";
+  import ProjectSection from "./lib/components/ProjectSection.svelte";
+  import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
   import { secretTheme } from "./lib/stores/mainstore";
 
   let isLoading: boolean = true;
-  $: backgroundColor = $secretTheme.isActive ? "#ffc207" : "#08a8f3";
 
   const onLoaded = () => {
     isLoading = false;
@@ -24,7 +23,7 @@
   }
 </script>
 
-<main style:background={backgroundColor}>
+<main class={`background ${$secretTheme.isActive && 'secret'}`}>
   {#if isLoading}
     <LoadingScreen />
   {/if}

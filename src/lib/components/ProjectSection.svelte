@@ -1,19 +1,16 @@
 <script lang="ts">
-  import { slide } from "svelte/transition";
   import { bounceOut } from "svelte/easing";
-  import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
+  import { slide } from "svelte/transition";
   import coralImage from "../../assets/coral-0.png";
   import projects from "../../datas/projects";
+  import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
   import OpenIcon from "./icons/OpenIcon.svelte";
   import RepositoryIcon from "./icons/RepositoryIcon.svelte";
-  import { secretTheme } from "../stores/mainstore";
 
-  $: backgroundColor = $secretTheme.isActive ? "#fcda96" : "#60c4f2";
 </script>
 
 <div
   class="pixel-box"
-  style:background={backgroundColor}
   transition:slide={{ delay: 2024, duration: 1000, easing: bounceOut }}
 >
   <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
