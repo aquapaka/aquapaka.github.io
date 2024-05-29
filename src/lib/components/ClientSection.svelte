@@ -17,7 +17,7 @@
 >
   <img class="pufferfish" src={pufferFish} alt="pufferfish" draggable="false" />
   <h2 class="font-bold pb-2">My Clients</h2>
-  <ul class="list-[square] pl-4">
+  <ul class="list-[square] pl-4 md:pl-6">
     {#each clients as client}
       <li>
         <div class="flex justify-between">

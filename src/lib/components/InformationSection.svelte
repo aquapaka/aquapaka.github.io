@@ -15,14 +15,14 @@
 >
   <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
   <h2 class="font-bold pb-2">My Skills</h2>
-  <ul class="list-[square] pl-4">
+  <ul class="list-[square] pl-4 md:pl-6">
     {#each skills as skill}
       <li>
         {#if Array.isArray(skill)}
           <span class="underline">{skill[0]}</span>
-          <ul class="pl-3">
+          <ul class="pl-0">
             {#each skill.slice(1) as ski}
-              <li>{ski}</li>
+              <li>- {ski}</li>
             {/each}
           </ul>
         {:else}

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h2 {
+        @apply text-[1.25rem];
+    }
+}
+
 .pixel-box {
     position: relative;
     background: var(--backgroundColor);

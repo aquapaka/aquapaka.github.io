@@ -18,7 +18,7 @@
 >
   <img class="coral-image" src={coralImage} alt="coral" draggable="false" />
   <h2 class="font-bold pb-2">My Projects</h2>
-  <ul class="list-[square] pl-4">
+  <ul class="list-[square] pl-4 md:pl-6">
     {#each projects as project}
       <li>
         <div class="flex justify-between">
@@ -26,7 +26,7 @@
             {project.name}
           </span>
           <span
-            class="mb-4 flex flex-col sm:flex-row gap-1 justify-end items-end"
+            class="mb-4 flex flex-col sm:flex-row gap-2 justify-end items-end"
           >
             {#if project.websiteUrl}
               <DropShadowNormalButton href={project.websiteUrl} target="_blank"
