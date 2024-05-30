@@ -5,15 +5,13 @@
   import clients from "../../datas/clients";
   import DropShadowNormalButton from "./DropShadowNormalButton.svelte";
   import OpenIcon from "./icons/OpenIcon.svelte";
-  import { secretTheme } from "../stores/mainstore";
-
 </script>
 
 <div
   class="pixel-box"
   transition:slide={{ delay: 1800, duration: 800, easing: cubicOut }}
 >
-  <img class="pufferfish" src={pufferFish} alt="pufferfish" draggable="false" />
+  <!-- <img class="pufferfish" src={pufferFish} alt="pufferfish" draggable="false" /> -->
   <h2 class="font-bold pb-2">My Clients</h2>
   <ul class="list-[square] pl-4 md:pl-6">
     {#each clients as client}

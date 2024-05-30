@@ -5,6 +5,7 @@
   import InformationSection from "./lib/components/InformationSection.svelte";
   import LoadingScreen from "./lib/components/LoadingScreen.svelte";
   import ProjectSection from "./lib/components/ProjectSection.svelte";
+  import PufferFish from "./lib/components/PufferFish.svelte";
   import SocialMediaLinks from "./lib/components/SocialMediaLinks.svelte";
   import { secretTheme } from "./lib/stores/mainstore";
 
@@ -23,17 +24,20 @@
   }
 </script>
 
-<main class={`background ${$secretTheme.isActive && 'secret'}`}>
+<main class={`background ${$secretTheme.isActive && "secret"}`}>
   {#if isLoading}
     <LoadingScreen />
   {/if}
-  <Avatar />
-  {#if !isLoading}
-    <SocialMediaLinks />
-    <InformationSection />
-    <ClientSection />
-    <ProjectSection />
-  {/if}
+  <div class="relative z-20">
+    <Avatar />
+    {#if !isLoading}
+      <SocialMediaLinks />
+      <InformationSection />
+      <ClientSection />
+      <ProjectSection />
+    {/if}
+  </div>
+  <PufferFish />
 </main>
 
 <style>

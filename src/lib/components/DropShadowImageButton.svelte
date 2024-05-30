@@ -3,7 +3,7 @@
 
   export let src: string;
   export let alt: string;
-  export let hidden: boolean;
+  export let hidden: boolean = false;
 </script>
 
 <button class="group" on:click on:keypress use:click_sound {hidden}>
