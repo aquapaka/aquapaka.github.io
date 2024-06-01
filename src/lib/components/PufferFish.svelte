@@ -14,7 +14,7 @@
   );
 
   function handleOnMouseMove(e: MouseEvent) {
-    coords.set({ x: e.clientX, y: e.clientY });
+    coords.set({ x: e.clientX + window.scrollX, y: e.clientY + window.scrollY });
   }
 
   onMount(() => {
