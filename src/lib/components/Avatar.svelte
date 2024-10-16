@@ -1,6 +1,6 @@
 <script lang="ts">
   import aquaAvatar from "../../assets/Aquatixel Pixel Art 800x800.png";
-  import meimeiAvatar from "../../assets/My Love Pixel Art 800x800.png";
+  import myLoveAvatar from "../../assets/My Queen Pixel Art 800x800.png";
   import { secretTheme } from "../stores/mainstore";
   import DropShadowImageButton from "./DropShadowImageButton.svelte";
 
@@ -19,7 +19,7 @@
 <div class="text-center mb-2">
   <h1 class="text-[1.5rem] md:text-[2rem] font-bold mb-2">
     {$secretTheme.isActive
-      ? "I'm in love with Meimei, but she doesn't love me anymore, I'm so sad but it's Okay"
+      ? "I'm at my happiest when Shuri is by my side, no matter where we are"
       : "Hi, I'm Aqua"}
   </h1>
   <DropShadowImageButton
@@ -32,7 +32,7 @@
   />
   <DropShadowImageButton
     hidden={!$secretTheme.isActive}
-    src={meimeiAvatar}
+    src={myLoveAvatar}
     alt="Avatar"
     on:click={secretClick}
     --desktop-width="120px"
